@@ -13,8 +13,8 @@ function solve_for_n(arr, n)
 end
 
 test_input = [1721 979 366 299 675 1456];
-@assert solve(test_input) == 514579 ["solve(test_input, 2) failed"];
-@assert solve_for_n(test_input, 3) == 241861950 ["solve(test_input, 3) failed"];
+@assert solve(test_input) == 514579 ["test case 1 failed"];
+@assert solve_for_n(test_input, 3) == 241861950 ["test case 2 failed"];
 
 input = map(x -> parse(Int64, x), readlines("input/day1.txt"));
 println("First star: " * string(solve(input)))

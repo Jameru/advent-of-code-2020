@@ -24,8 +24,8 @@ function solve_new(input)
 	ret
 end
 
-@assert solve_old(eachline("input/test_day2.txt")) == 2 ["solve(test_input) failed"];
-@assert solve_new(eachline("input/test_day2.txt")) == 1 ["solve(test_input) failed"];
+@assert solve_old(eachline("input/test_day2.txt")) == 2 ["test case 1 failed"];
+@assert solve_new(eachline("input/test_day2.txt")) == 1 ["test case 2 failed"];
 
 println("First star: " * string(solve_old(eachline("input/day2.txt"))))
-println("First star: " * string(solve_new(eachline("input/day2.txt"))))
+println("Second star: " * string(solve_new(eachline("input/day2.txt"))))
