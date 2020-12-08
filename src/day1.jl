@@ -23,7 +23,7 @@ function solve_for_2_better(input)
 end
 
 function solve_for_2_also_better(input)
-	arr = input |> maximum |> falses
+	arr = zeros(2020)
 	for x in input
 		arr[x] = true
 		if arr[2020 - x] == true
