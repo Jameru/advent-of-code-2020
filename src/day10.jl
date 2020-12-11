@@ -12,7 +12,7 @@ function solve_plug_everything(input)
 			threes += 1
 		end
 	end
-	println(twos) # <- Note there are no twos!
+	println("twos: " * string(twos)) # <- Note there are no twos!
 	ones * threes
 end
 
@@ -33,13 +33,7 @@ function solve_2(input)
 end
 
 function calc_configs(n)::Int64
-	if n == 1
-		2
-	elseif n == 2
-		4
-	else
-		2^n - (n - 2)*(n - 1)/2
-	end
+	2^n - (n - 2)*(n - 1)/2
 end
 
 @assert solve_plug_everything(parse.(Int64, readlines("input/test_day10.txt"))) == 220 ["test case 1 failed"]
