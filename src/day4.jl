@@ -7,7 +7,7 @@ function solve(input)
 	lines = collect(Iterators.takewhile(line -> line != "", input))
 	while length(lines) > 0
 		passport = join(lines, ' ')
-		if all(map(req -> contains(passport, req), required))
+		if all(contains.(passport, required))
 			ret += 1
 		end
 		lines = collect(Iterators.takewhile(line -> line != "", input))
@@ -21,7 +21,7 @@ function solve_with_validations(input)
 	while length(lines) > 0
 		passport = join(lines, ' ')
 		fields = split(passport)
-		if all(map(req -> validate(passport, req), required))
+		if all(validate.(passport, required))
 			ret += 1
 		end
 		lines = collect(Iterators.takewhile(line -> line != "", input))
