@@ -36,8 +36,8 @@ function calc_configs(n)::Int64
 	2^n - (n - 2)*(n - 1)/2
 end
 
-@assert solve_plug_everything(parse.(Int64, readlines("input/test_day10.txt"))) == 220 ["test case 1 failed"]
-@assert solve_2(parse.(Int64, readlines("input/test_day10.txt"))) == 19208 ["test case 2 failed"]
+@assert solve_plug_everything(parse.(Int64, readlines("input/test/test_day10.txt"))) == 220 ["test case 1 failed"]
+@assert solve_2(parse.(Int64, readlines("input/test/test_day10.txt"))) == 19208 ["test case 2 failed"]
 
 input = parse.(Int64, readlines("input/day10.txt"))
 println("First star: " * string(solve_plug_everything(input)))

@@ -72,8 +72,8 @@ function solve_fix_loop(input)
 	ret
 end
 
-@assert solve_with_loop(readlines("input/test_day8.txt")) == 5 ["test case 1 failed"]
-@assert solve_fix_loop(readlines("input/test_day8.txt")) == 8 ["test case 2 failed"]
+@assert solve_with_loop(readlines("input/test/test_day8.txt")) == 5 ["test case 1 failed"]
+@assert solve_fix_loop(readlines("input/test/test_day8.txt")) == 8 ["test case 2 failed"]
 
 println("First star: " * string(solve_with_loop(readlines("input/day8.txt"))))
 println("Second star: " * string(solve_fix_loop(readlines("input/day8.txt"))))

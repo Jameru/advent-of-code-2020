@@ -18,8 +18,8 @@ function solve_second(input)
 	ret
 end
 
-@assert solve_first(eachline("input/test_day6.txt")) == 11 ["test case 1 failed"]
-@assert solve_second(eachline("input/test_day6.txt")) == 6 ["test case 2 failed"]
+@assert solve_first(eachline("input/test/test_day6.txt")) == 11 ["test case 1 failed"]
+@assert solve_second(eachline("input/test/test_day6.txt")) == 6 ["test case 2 failed"]
 
 println("First star: " * string(solve_first(eachline("input/day6.txt"))))
 println("Second star: " * string(solve_second(eachline("input/day6.txt"))))

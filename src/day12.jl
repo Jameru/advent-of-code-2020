@@ -81,8 +81,8 @@ function solve_waypoint(input, waypoint = [10 1])
 	abs(x) + abs(y)
 end
 
-@assert solve_ship(eachline("input/test_day12.txt")) == 25 ["test case 1 failed"]
-@assert solve_waypoint(eachline("input/test_day12.txt")) == 286 ["test case 2 failed"]
+@assert solve_ship(eachline("input/test/test_day12.txt")) == 25 ["test case 1 failed"]
+@assert solve_waypoint(eachline("input/test/test_day12.txt")) == 286 ["test case 2 failed"]
 
 println("First star: " * string(solve_ship(eachline("input/day12.txt"))))
 println("Second star: " * string(solve_waypoint(eachline("input/day12.txt"))))

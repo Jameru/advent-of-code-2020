@@ -79,7 +79,7 @@ function validate(passport, req)
 	end
 end
 
-@assert solve(eachline("input/test_day4.txt")) == 2 ["test case 1 failed"]
+@assert solve(eachline("input/test/test_day4.txt")) == 2 ["test case 1 failed"]
 
 println("First star: " * string(solve(eachline("input/day4.txt"))))
 println("Second star: " * string(solve_with_validations(eachline("input/day4.txt"))))

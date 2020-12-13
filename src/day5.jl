@@ -30,7 +30,7 @@ function solve_my_seat_id(input)
 	my_seat_id
 end
 
-@assert solve_max_seat_id(eachline("input/test_day5.txt")) == 820 ["test case 1 failed"]
+@assert solve_max_seat_id(eachline("input/test/test_day5.txt")) == 820 ["test case 1 failed"]
 
 println("First star: " * string(solve_max_seat_id(eachline("input/day5.txt"))))
 println("Second star: " * string(solve_my_seat_id(eachline("input/day5.txt"))))

@@ -32,8 +32,8 @@ function solve_find_weakness(input, target)
 	minimum(arr) + maximum(arr)
 end
 
-@assert solve_find_invalid(parse.(Int64, readlines("input/test_day9.txt")), 5) == 127 ["test case 1 failed"]
-@assert solve_find_weakness(parse.(Int64, readlines("input/test_day9.txt")), 127) == 62 ["test case 2 failed"]
+@assert solve_find_invalid(parse.(Int64, readlines("input/test/test_day9.txt")), 5) == 127 ["test case 1 failed"]
+@assert solve_find_weakness(parse.(Int64, readlines("input/test/test_day9.txt")), 127) == 62 ["test case 2 failed"]
 
 invalid_number = solve_find_invalid(parse.(Int64, readlines("input/day9.txt")), 25)
 println("First star: " * string(invalid_number))

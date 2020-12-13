@@ -20,8 +20,8 @@ function solve_for_all(input)
 	reduce(*, map(slp -> solve_for_slope(eachline(input), slp[1], slp[2]), slopes))
 end
 
-@assert solve_for_slope(eachline("input/test_day3.txt"), 3, 1) == 7 ["test case 1 failed"]
-@assert solve_for_all("input/test_day3.txt") == 336 ["test case 2 failed"]
+@assert solve_for_slope(eachline("input/test/test_day3.txt"), 3, 1) == 7 ["test case 1 failed"]
+@assert solve_for_all("input/test/test_day3.txt") == 336 ["test case 2 failed"]
 
 println("First star: " * string(solve_for_slope(eachline("input/day3.txt"), 3, 1)))
 println("Second star: " * string(solve_for_all("input/day3.txt")))

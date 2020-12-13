@@ -62,8 +62,8 @@ function solve_look(input)
 	count(c -> c == '#', join(curr))
 end
 
-@assert solve_neig(readlines("input/test_day11.txt")) == 37 ["test case 1 failed"]
-@assert solve_look(readlines("input/test_day11.txt")) == 26 ["test case 2 failed"]
+@assert solve_neig(readlines("input/test/test_day11.txt")) == 37 ["test case 1 failed"]
+@assert solve_look(readlines("input/test/test_day11.txt")) == 26 ["test case 2 failed"]
 
 input = readlines("input/day11.txt")
 println("First star: " * string(@time solve_neig(input)))

@@ -35,8 +35,8 @@ function solve(input)
 	ret
 end
 
-@assert very_inefficient_solve(readlines("input/test_day7.txt")) == 4 ["test case 1 failed"]
-@assert solve(readlines("input/test_day7.txt")) == 32 ["test case 2 failed"]
+@assert very_inefficient_solve(readlines("input/test/test_day7.txt")) == 4 ["test case 1 failed"]
+@assert solve(readlines("input/test/test_day7.txt")) == 32 ["test case 2 failed"]
 
 println("First star: " * string(@time very_inefficient_solve(readlines("input/day7.txt"))))
 println("Second star: " * string(@time solve(readlines("input/day7.txt"))))
